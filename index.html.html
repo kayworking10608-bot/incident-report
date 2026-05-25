@@ -206,13 +206,21 @@
           <input type="text" id="reporter" placeholder="請輸入姓名" required>
         </div>
         <div class="field">
-          <label>所屬店舖 <span class="req">*</span></label>
+          <label>所屬店舖／部門 <span class="req">*</span></label>
           <select id="store" required>
             <option value="">— 請選擇 —</option>
-            <option value="公正店">公正店</option>
-            <option value="勤美店">勤美店</option>
-            <option value="無理店">無理店</option>
-            <option value="溫久熬">溫久熬</option>
+            <optgroup label="━━ 門市">
+              <option value="公正店">公正店</option>
+              <option value="勤美店">勤美店</option>
+              <option value="無理店">無理店</option>
+              <option value="溫久熬">溫久熬</option>
+            </optgroup>
+            <optgroup label="━━ 部門">
+              <option value="老闆">老闆</option>
+              <option value="行銷">行銷</option>
+              <option value="會計">會計</option>
+              <option value="採購">採購</option>
+            </optgroup>
           </select>
         </div>
       </div>
@@ -285,6 +293,12 @@
             <option value="採購品項">🛒 採購品項</option>
             <option value="大型設備購買">🏗️ 大型設備購買</option>
             <option value="伙食費狀況">🍱 伙食費狀況</option>
+          </optgroup>
+          <optgroup label="━━ 店務發展">
+            <option value="開店">🏪 開店</option>
+            <option value="裝潢">🎨 裝潢</option>
+            <option value="移址">📦 移址</option>
+            <option value="營運">📊 營運</option>
           </optgroup>
           <optgroup label="━━ 其他">
             <option value="其他">📌 其他</option>
@@ -401,6 +415,10 @@
     '菜單變動':     '💡 請說明新增／移除品項、生效日期，是否需要更新物料',
     '採購品項':     '💡 請說明採購品名、數量、供應商，以及緊急程度',
     '伙食費狀況':   '💡 請說明本期伙食費金額、人數、與上期相比是否異常',
+    '開店':         '💡 請說明開店進度、地點、預計開幕時間及需要協助事項',
+    '裝潢':         '💡 請說明裝潢項目、施工廠商、預計完工時間及目前進度',
+    '移址':         '💡 請說明移址原因、新舊地址、預計搬遷時間及需要協調事項',
+    '營運':         '💡 請說明營運相關議題、影響範圍及建議處理方向',
     '其他':         '💡 請在下方詳細說明事件類型',
   };
 
